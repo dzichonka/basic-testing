@@ -42,7 +42,7 @@ describe('simpleCalculator tests', () => {
 
   test('should return null for invalid arguments', () => {
     const result = simpleCalculator({
-      a: NaN,
+      a: '2' as unknown as number,
       b: 3,
       action: Action.Add,
     });
